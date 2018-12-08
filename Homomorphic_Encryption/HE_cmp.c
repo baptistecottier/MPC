@@ -60,5 +60,4 @@ void step5_Alice(HE_cmp_Alice Alice) {
 }
 
 void step6_Bob(HE_cmp_Bob Bob) {
-
 }
