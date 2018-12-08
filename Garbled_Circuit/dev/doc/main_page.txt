@@ -1,0 +1,54 @@
+/*! \mainpage Secure Comparison based on Garbled Circuits
+ *
+ * 1. PROJECT OVERVIEW
+ * -------------------
+ *
+ * In order to fully understand this project, one should have knowledge on garbled circuits, elleptic curves and homomorphic encryption 
+ *
+ * The folder is organized as follows :
+ *
+ *  - <b>bin/</b>: Files generated during compilation
+ *  - <b>doc/</b>: Technical documentation of the scheme
+ *  - <b>lib/</b>: Third party libraries used 
+ *  - <b>src/</b>: Source code of the scheme  
+ *  - <b>doxygen.conf</b>: Documentation configuration file
+ *  - <b>Makefile</b>: Makefile
+ *  
+ *  <br />
+ *  
+ *  2. INSTALLATION INSTRUCTIONS
+ *  ----------------------------
+ *  
+ *  <h3>2.1 Requirements</h3>
+ *
+ *  The following softwares and librairies are required: <b>make</b>, <b>gcc</b>, <b>openssl</b> and <b>gmp</b>.
+ *
+ *  <h3>2.2 Compilation Step</h3>
+ *
+ *  - Execute <b>make comparison</b> to compile a working example of the comparison. Run <b>bin/comparison</b> to execute the comparison and display the result.
+ *
+ *  During compilation, the following files are created inside the <b>bin/build</b> folder:
+ *  - <b>hash.o</b>: A wrapper around openssl SHA512 implementation
+ *  - <b>auxiliary_functions.o</b>: background functions used in other functions
+ *  - <b>cmp_steps.o</b>: main functions used in API and their initializations and clearences
+ *  - <b>gate_functions.o</b>: functions used to garble and evaluate gates
+ *  - <b>oblivious_transfer.o</b>: functions used in the oblivious transfer
+ *  - <b>paillier.o</b>: functions to encrypt and decrypt with Paillier keys
+ *  - <b>randombytes.o</b>: functions used to generate random inputs
+ *  - <b>twisted_edwards_curves.o</b>: functions used for computations on twisted Edwards curves
+ *
+ * <br />
+ *
+ *  3. DOCUMENTATION GENERATION
+ *  ---------------------------
+ *
+ *  <h3>3.1 Requirements</h3>
+ *
+ *  The following softwares are required: <b>doxygen</b> and <b>bibtex</b>.
+ *
+ *  <h3>3.2 Generation Step</h3>
+ * 
+ *  - Run <b>doxygen doxygen.conf</b> to generate the code documentation
+ *  - Browse <b>doc/html/index.html</b> to read the documentation
+ *
+ */
